@@ -12,8 +12,8 @@ There's some real nice methods that I was able to use:
 
 Method name | Type  | Description |
 ------------|-------|-------------|
-`inherited` | Class | Fired when a subclass is instantiated, so you can run some setup on the new class. Pretty baller. |
-`class_eval`| Class | A guess a bit like `eval` in JavaScript, takes a string, and attemptes to evaluate it in the context of the class. I used it to dynamically create `attr_accessors` based on the database table's field names. |
+`inherited` | Class | Fired when a subclass is instantiated, so you can run some setup on the new class. |
+`class_eval`| Class | I guess a bit like `eval` in JavaScript, takes a string, and attemptes to evaluate it in the context of the class. I used it to dynamically create `attr_accessors` based on the database table's field names. |
 `instance_variable_set`| Class | Used to dynamically create instnace variables. |
 `instance_methods` | Instance | Returns an array of the instance methods, expressed as `symbols`. Used to create SQL statements based on the instance's reader methods |
 
