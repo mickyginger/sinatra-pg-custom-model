@@ -1,0 +1,16 @@
+<ul id="quotes">
+  <% @quotes.each do |quote| %>
+    <li>
+      <a href="/quotes/<%= quote.id %>">
+        <blockquote>
+          <p><%= quote.text %></p>
+          <footer><%= quote.author %></footer>
+        </blockquote>
+      </a>
+    </li>
+  <% end %>
+</ul>
+
+<nav>
+  <a href="/quotes/new">Add A New Quote</a>
+</nav>

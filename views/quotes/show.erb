@@ -1,0 +1,11 @@
+<blockquote>
+  <p><%= @quote.text %></p>
+  <footer><%= @quote.author %></footer>
+</blockquote>
+
+<a href="/quotes/<%= @quote.id %>/edit" class="btn btn-primary">Edit</a>
+
+<form action="/quotes/<%= @quote.id %>" method="POST" class="delete">
+  <input type="hidden" name="_method" value="DELETE">
+  <button class="btn btn-default">Delete</button>
+</form>
